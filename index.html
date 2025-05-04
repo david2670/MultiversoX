@@ -1,84 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MultiversoX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MultiversoX - Conciencia Digital</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
     }
-
     header {
-      background-color: #0a0a23;
+      background: url('https://images.unsplash.com/photo-1531925470851-1b5896b67d90?auto=format&fit=crop&w=1280&q=80') center/cover no-repeat;
       color: white;
-      padding: 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-
-    nav {
-      background-color: #14142b;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
-
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #28284a;
-    }
-
     section {
-      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 30px 20px;
     }
-
     h2 {
-      color: #0a0a23;
+      color: #2c3e50;
+      margin-top: 40px;
     }
-
+    ul {
+      padding-left: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      margin: 20px auto;
+      display: block;
+      border: none;
+      border-radius: 8px;
+    }
     footer {
-      background-color: #0a0a23;
+      background: #2c3e50;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 50px;
     }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: auto;
+    a {
+      color: #3498db;
+      text-decoration: none;
     }
-
-    input, textarea {
-      margin: 10px 0;
-      padding: 10px;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background-color: #0a0a23;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #28284a;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -86,63 +63,51 @@
 
   <header>
     <h1>MultiversoX</h1>
-    <p>Explora, entiende y cuida tu vida digital</p>
+    <p>Entiende y navega el internet de manera segura e inteligente</p>
   </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#riesgos">Riesgos</a>
-    <a href="#buenas-practicas">Buenas Prácticas</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <section>
+    <h2>¿Qué es el Internet hoy en día?</h2>
+    <p>Hoy el internet no es solo una herramienta de búsqueda, sino un espacio donde trabajamos, estudiamos, nos comunicamos y nos entretenemos. Vivimos en un entorno digital que evoluciona cada segundo.</p>
 
-  <section id="inicio">
-    <h2>Bienvenido a MultiversoX</h2>
-    <p>Una plataforma educativa para navegar de forma consciente en el mundo digital. Aquí encontrarás información actualizada sobre el internet, sus riesgos y cómo usarlo de manera responsable.</p>
-  </section>
-
-  <section id="sobre">
-    <h2>¿Qué es MultiversoX?</h2>
-    <p>MultiversoX es un proyecto informativo que busca crear conciencia sobre el uso del internet hoy en día. Desde la privacidad hasta la salud mental, abordamos los principales temas que afectan a los usuarios digitales.</p>
-  </section>
-
-  <section id="riesgos">
-    <h2>Principales riesgos del internet</h2>
+    <h2>Beneficios del Internet</h2>
     <ul>
-      <li>Privacidad y robo de datos personales</li>
-      <li>Desinformación y noticias falsas</li>
-      <li>Adicción a redes sociales</li>
-      <li>Ciberacoso y bullying digital</li>
-      <li>Estafas y fraudes en línea</li>
+      <li>Aprendizaje sin fronteras</li>
+      <li>Comunicación instantánea</li>
+      <li>Acceso a oportunidades laborales y sociales</li>
+      <li>Creatividad, innovación y emprendimiento</li>
     </ul>
-  </section>
 
-  <section id="buenas-practicas">
-    <h2>Buenas prácticas digitales</h2>
-    <ol>
-      <li>Usar contraseñas seguras y únicas</li>
-      <li>Verificar fuentes de información</li>
-      <li>Configurar la privacidad en redes sociales</li>
-      <li>Tomar descansos del uso digital</li>
-      <li>Enseñar a otros sobre seguridad online</li>
-    </ol>
-  </section>
+    <h2>Riesgos y desafíos</h2>
+    <p>Pero también debemos tener cuidado con:</p>
+    <ul>
+      <li>Desinformación y teorías falsas</li>
+      <li>Adicción al contenido digital</li>
+      <li>Hackeos y robo de identidad</li>
+      <li>Ciberbullying</li>
+    </ul>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tienes preguntas o sugerencias? Escríbenos:</p>
-    <form>
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo electrónico" required>
-      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <h2>¿Cómo navegar de forma consciente?</h2>
+    <ul>
+      <li>Verifica tus fuentes</li>
+      <li>Respeta tu tiempo en pantalla</li>
+      <li>Cuida tu privacidad digital</li>
+      <li>Habla sobre tus experiencias en línea</li>
+    </ul>
+
+    <h2>Video recomendado: ¿Qué es el internet?</h2>
+    <iframe src="https://www.youtube.com/embed/AEaKrq3SpW8" allowfullscreen></iframe>
+
+    <h2>Recurso adicional:</h2>
+    <p>Te invitamos a visitar esta página confiable para más información:
+      <a href="https://www.consumer.es/tecnologia/uso-responsable-internet.html" target="_blank">Uso responsable de Internet - Consumer.es</a>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 MultiversoX. Todos los derechos reservados.</p>
+    <p>© 2025 MultiversoX. Proyecto educativo sobre el mundo digital.</p>
   </footer>
 
 </body>
 </html>
+
